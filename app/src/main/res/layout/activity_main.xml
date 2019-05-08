@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="395dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Первое число"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:hint="Второе число"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="395dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="256dp"
+            android:text="Результат"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="8dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="395dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="364dp"
+        android:gravity="top"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp">
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="70dp"
+            android:layout_height="47dp"
+            android:onClick="onDivButtonClick"
+            android:text="/"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="378dp" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="70dp"
+            android:layout_height="47dp"
+            android:onClick="onSubButtonClick"
+            android:text="-"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="325dp"
+            tools:layout_editor_absoluteY="378dp" />
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="70dp"
+            android:layout_height="47dp"
+            android:onClick="onMulButtonClick"
+            android:text="*"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="378dp" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="70dp"
+            android:layout_height="47dp"
+            android:onClick="onAddButtonClick"
+            android:text="+"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="378dp" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
